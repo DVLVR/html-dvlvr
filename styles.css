@@ -1,0 +1,84 @@
+body {
+  background-color: #FFD1DC; /* A pastel color */
+}
+
+h2 {
+  font-family: monospace;
+  color: rgb(44, 36, 119);
+  display: flex;
+  justify-content: center;
+}
+
+
+.canvas {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #FFABAB; /* Another pastel color */
+  
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #555;
+  outline-color: #555;
+  transition: 0.5s;
+}
+
+input[type=text]:focus {
+  border: 3px solid #777;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#message {
+  margin-top: 20px;
+  color: green;
+  font-size: 20px;
+}
+  /* ... */
+  
+  #successMessage {
+    color: green;
+  }.canvas {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .pixel {
+    width: 10px;
+    height: 10px;
+    float: left;
+    background: #B2FFB9; /* Pastel green */
+  }
+  
+  /* Add more colors here based on your pixel art design */
+  .pixel:nth-child(3) {
+    background: #FFDFB9; /* Pastel orange */
+  }
+  
+  /* More pixel styles as needed for your design */
+  /* ... */
+  
+  #successMessage {
+    color: green;
+  }
