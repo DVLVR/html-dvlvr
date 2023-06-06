@@ -1,8 +1,21 @@
 body {
   background-color: #FFD1DC; /* A pastel color */
 }
+.product {
+  border: 10px solid #ac5353;
+  margin-bottom: 10px;
+  padding: 10px;
+}
 
-h2 {
+.product img {
+  width: 500px;
+  height: 500px;
+}
+
+.cart-total {
+  margin-top: 20px;
+}
+h1,h2 {
   font-family: monospace;
   color: rgb(44, 36, 119);
   display: flex;

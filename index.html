@@ -5,10 +5,50 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+
+   
+  <h1>MI TIENDITA DE LOKURAS</h1>
+
+  <div class="product">
+    <h2>Product 1</h2>
+    <img src="product1.gif" alt="Product 1">
+    <p>Price: $10</p>
+    <button class="add-to-cart" data-price="10">Add to cart</button>
+  </div>
+
+  <div class="product">
+    <h2>Product 2</h2>
+    <img src="product2.gif" alt="Product 2">
+    <p>Price: $20</p>
+    <button class="add-to-cart" data-price="20">Add to cart</button>
+  </div>
+
+  <div class="cart-total">
+    <h2>Cart Total: $<span id="total">0</span></h2>
+  </div>
+
+  <script>
+    var total = 0;
+
+    var addToCartButtons = document.getElementsByClassName('add-to-cart');
+
+    for (var i = 0; i < addToCartButtons.length; i++) {
+      addToCartButtons[i].addEventListener('click', addToCart);
+    }
+
+    function addToCart(event) {
+      var price = parseInt(event.target.dataset.price);
+      total += price;
+
+      document.getElementById('total').textContent = total;
+    }
+  </script>
     <div class="canvas">
      
       <!-- This will be populated with JavaScript -->
     </div>
+
+
     <h2>FORM DE SOCIES</h2>
     <form id="memberForm">
         <input name="nombre" type="text" required placeholder="Nombre" />
