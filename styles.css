@@ -1,6 +1,8 @@
 body {
-  background-color: #FFD1DC; /* A pastel color */
+  background-color: #FFD1DC;
+  /* A pastel color */
 }
+
 .product {
   border: 10px solid #ac5353;
   margin-bottom: 10px;
@@ -15,13 +17,23 @@ body {
 .cart-total {
   margin-top: 20px;
 }
-h1,h2 {
+
+h1,
+h2,
+p,
+button {
   font-family: monospace;
-  color: rgb(44, 36, 119);
+  color: rgb(36, 37, 119);
   display: flex;
   justify-content: center;
+  font-family: 'Cherry Bomb One', cursive;
 }
 
+.add-to-cart {
+
+  background-color: #B2FFB9;
+  font-weight: bolder;
+}
 
 .canvas {
   width: 500px;
@@ -31,8 +43,9 @@ h1,h2 {
   justify-content: center;
   align-items: center;
   margin: auto;
-  background-color: #FFABAB; /* Another pastel color */
-  
+  background-color: #FFABAB;
+  /* Another pastel color */
+
 }
 
 input[type=text] {
@@ -68,30 +81,35 @@ input[type=submit]:hover {
   color: green;
   font-size: 20px;
 }
-  /* ... */
-  
-  #successMessage {
-    color: green;
-  }.canvas {
-    width: 80px;
-    height: 80px;
-  }
-  
-  .pixel {
-    width: 10px;
-    height: 10px;
-    float: left;
-    background: #B2FFB9; /* Pastel green */
-  }
-  
-  /* Add more colors here based on your pixel art design */
-  .pixel:nth-child(3) {
-    background: #FFDFB9; /* Pastel orange */
-  }
-  
-  /* More pixel styles as needed for your design */
-  /* ... */
-  
-  #successMessage {
-    color: green;
-  }
+
+/* ... */
+
+#successMessage {
+  color: green;
+}
+
+.canvas {
+  width: 80px;
+  height: 80px;
+}
+
+.pixel {
+  width: 10px;
+  height: 10px;
+  float: left;
+  background: #B2FFB9;
+  /* Pastel green */
+}
+
+/* Add more colors here based on your pixel art design */
+.pixel:nth-child(3) {
+  background: #FFDFB9;
+  /* Pastel orange */
+}
+
+/* More pixel styles as needed for your design */
+/* ... */
+
+#successMessage {
+  color: green;
+}
