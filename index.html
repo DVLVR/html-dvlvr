@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>DVLVR</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-   
-  <h1>MI TIENDITA DE LOKURAS</h1>
+    <main>
+    </main>
+    <h1>MI TIENDITA DE LOKURAS</h1>
 
-  <div class="product">
-    <h2>VISHNU</h2>
-    <img src="product1.gif" alt="VISHNU">
-    <p>Price: $10</p>
-    <button class="add-to-cart" data-price="10">Add to cart</button>
-  </div>
+    <div class="product">
+        <h2>VISHNU</h2>
+        <img src="product1.gif" alt="VISHNU">
+        <p>Price: $10</p>
+        <button class="add-to-cart" data-price="10">Add to cart</button>
+    </div>
 
-  <div class="product">
-    <h2>VISHNU EN LA MATRIX</h2>
-    <img src="product2.gif" alt="Product 2">
-    <p>Price: $20</p>
-    <button class="add-to-cart" data-price="20">Add to cart</button>
-  </div>
+    <div class="product">
+        <h2>VISHNU EN LA MATRIX</h2>
+        <img src="product2.gif" alt="Product 2">
+        <p>Price: $20</p>
+        <button class="add-to-cart" data-price="20">Add to cart</button>
+    </div>
+    </main>
+    <div class="cart-total">
+        <h2>Cart Total: $<span id="total">0</span></h2>
+    </div>
 
-  <div class="cart-total">
-    <h2>Cart Total: $<span id="total">0</span></h2>
-  </div>
+    <script>
+        var total = 0;
 
-  <script>
-    var total = 0;
+        var addToCartButtons = document.getElementsByClassName('add-to-cart');
 
-    var addToCartButtons = document.getElementsByClassName('add-to-cart');
+        for (var i = 0; i < addToCartButtons.length; i++) {
+            addToCartButtons[i].addEventListener('click', addToCart);
+        }
 
-    for (var i = 0; i < addToCartButtons.length; i++) {
-      addToCartButtons[i].addEventListener('click', addToCart);
-    }
+        function addToCart(event) {
+            var price = parseInt(event.target.dataset.price);
+            total += price;
 
-    function addToCart(event) {
-      var price = parseInt(event.target.dataset.price);
-      total += price;
+            document.getElementById('total').textContent = total;
+        }
+    </script>
 
-      document.getElementById('total').textContent = total;
-    }
-  </script>
+    <hr>
     <div class="canvas">
-     
-      <!-- This will be populated with JavaScript -->
+
+        <!-- This will be populated with JavaScript -->
     </div>
 
 
@@ -61,4 +70,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
