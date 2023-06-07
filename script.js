@@ -33,3 +33,15 @@ form.addEventListener('submit', async (event) => {
         console.error(error);
     }
 });
+
+document.addEventListener("DOMContentLoaded", function(){
+    var navItems = document.querySelectorAll(".nav-item");
+  
+    navItems.forEach(function(item){
+      item.addEventListener("click", function(e){
+        e.preventDefault();
+        alert(`IR A ${this.textContent}`);
+      });
+    });
+  });
+  

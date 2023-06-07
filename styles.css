@@ -2,37 +2,94 @@ body {
   background-color: #FFD1DC;
   /* A pastel color */
 }
+#navbar {
+  background-color: #79107c;
+}
 
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-link {
+  display: block;
+  -webkit-text-stroke: .4px white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: overline;
+  font-family: 'Fruktur', cursive;
+  color: rgb(36, 37, 119);
+  text-shadow: white;
+  font-size: 30px;
+}
+
+.nav-link:hover {
+  background-color: #03017a;
+}
 .product {
   border: 10px solid #ac5353;
   margin-bottom: 10px;
   padding: 10px;
+  
 }
 
 .product img {
   width: 500px;
   height: 500px;
+  
 }
 
 .cart-total {
   margin-top: 20px;
 }
 
-h1,
-h2,
-p,
-button {
-  font-family: monospace;
+
+p{
+  font-size:50px;
+  font-family: 'Bungee Shade';
+  color: #003a92;
+  animation-delay: 10ms; 
+  -webkit-text-stroke: 2px rgb(255, 241, 49);
+
+}
+
+h1{
+  font-family: 'Fruktur', cursive;
+  color: rgb(36, 37, 119);
+  display: flex;
+  justify-content: center;
+  animation: blink-text 1.9s linear infinite;
+}
+
+
+h2 {
+  font-size:30px;
   color: rgb(36, 37, 119);
   display: flex;
   justify-content: center;
   font-family: 'Cherry Bomb One', cursive;
+  font-weight: 100;
+  -webkit-text-stroke: 2px rgb(80, 243, 243);
 }
+button {
+  
+  font-size:30px;
+  color: rgb(36, 37, 119);
+  display: flex;
+  justify-content: center;
+  font-family: 'Fruktur', cursive;}
+  
 
 .add-to-cart {
 
   background-color: #B2FFB9;
-  font-weight: bolder;
+  
 }
 
 .canvas {
